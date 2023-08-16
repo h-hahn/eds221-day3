@@ -32,10 +32,6 @@ if (blue_whale > 35) {
   }
 ```
 
-```{r}
-
-```
-
 ## Switch statement
 
 ```{r}
@@ -52,5 +48,28 @@ if (housing_type == "whole") {
   print("750")
 } else if (housing_type == "single") {
   print("400")
+}
+```
+
+## For loops
+
+```{r}
+height <- c(58, 61, 65, 72, 89, 94, 101)
+
+for (i in seq_along(height)) {
+  half_height = height[i]/2
+  print(half_height)
+}
+
+# for each value in the height vector, return the sum of the value plus the one right after it
+for (i in seq(1:(length(height)-1))) {
+  height_add = height[i] + height[i + 1]
+  print(height_add)
+}
+
+# write a for loop that calculates the value of height for each element divided by the mean of the entire height vector
+for (i in seq_along(height)) {
+  height_div = height[i]/mean(height)
+  print(height_div)
 }
 ```
