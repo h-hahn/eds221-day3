@@ -32,6 +32,10 @@ if (blue_whale > 35) {
   }
 ```
 
+```{r}
+
+```
+
 ## Switch statement
 
 ```{r}
